@@ -133,7 +133,7 @@ public class Fast extends JFrame implements ActionListener{
                        balance -= Integer.parseInt(rs.getString("amount"));
                    }
                 }
-                if(ae.getSource() != back && balance <= Integer.parseInt(findamount)){
+                if(ae.getSource() != back && balance < Integer.parseInt(findamount)){
                     JOptionPane.showMessageDialog(null,"Insuffisint Balance");
                     return;
                 }
